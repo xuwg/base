@@ -18,8 +18,8 @@ FILE(GLOB_RECURSE HeaderFiles "./*.h")
 #Win + VS环境下,会自动在设置的目录后面扩展一层 <CONFIG> 目录,所以最终生成的Debug版本库会在 ${PROJECT_SOURCE_DIR}/../lib/Debug 目录下,
 #Release版本库会在 ${PROJECT_SOURCE_DIR}/../lib/Release 目录下
 #Linux + GCC环境下,无论是Debug还是Release,生成的库文件会直接放在你所设置的目录下,不会有差异
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin)
-SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin)
+#SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin)
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 #设置Debug版本和Release版本可执行文件的输出目录,
 #一旦设置上面的属性,在任何环境下生成的可执行文件都将直接放在你所设置的目录
